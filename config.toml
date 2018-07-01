@@ -1,0 +1,35 @@
+baseURL = "https://luczakweb.pl/"
+languageCode = "en-us"
+
+theme = "hugo-coder"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+    author = "Kamil Luczak"
+    description = "Kamil Luczak's personal website"
+    keywords = "blog,developer,personal"
+    info = "C++/Python developer"
+
+    hideCredits = true
+    hideCopyright = false
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/kamil1b/"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 2
+    url = "https://www.linkedin.com/in/kamil1b/"
