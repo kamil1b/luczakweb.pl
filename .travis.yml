@@ -3,6 +3,9 @@ go:
   - master
 install:
   - go get github.com/spf13/hugo
+before_script:
+  - curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash
+  - FOSSA_API_KEY=$FOSSA_TOKEN fossa
 script:
   - hugo
 before_deploy:
@@ -10,6 +13,8 @@ before_deploy:
   - eval "$(ssh-agent -s)"
   - chmod 600 deploy_rsa
   - ssh-add deploy_rsa
+after_success:
+  - fossa test
 deploy:
   provider: script
   skip_cleanup: true
