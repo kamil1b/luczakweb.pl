@@ -25,6 +25,8 @@ pygmentscodefencesguesssyntax = true
     # RTL support
     rtl = false
 
+    google_analytics = "UA-52526793-1"
+
 [[params.social]]
     name = "Github"
     weight = 1
