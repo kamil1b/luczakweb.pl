@@ -41,7 +41,7 @@ pygmentscodefencesguesssyntax = true
 [[menu.main]]
     name = "Main"
     weight = 1
-    url  = ""
+    url  = "/"
 [[menu.main]]
     name = "About Me"
     weight = 2
